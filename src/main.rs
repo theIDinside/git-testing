@@ -1,4 +1,4 @@
-
+pub mod io;
 fn one_two_or_three(s: &str) -> Option<u8> {
     match &s[..] {
         "one" => Some(1),
@@ -17,4 +17,5 @@ fn main() {
         println!("we did not understand or get input");
     }   
     println!("Interactive rebase, hello!");
+    io::foo::write_foo("Hello libc world!\r\n"); 
 }
